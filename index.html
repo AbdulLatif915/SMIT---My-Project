@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <div class="Portfolio-container">
-        <ul class="navlist">
-            <li><a href="#">home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">service</a></li>
-        </ul>
-        <div class="lift">
-            <div class="icon">
-                
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
-            </div>
-            <div class="content">
-                <p class="intro"> Hi I Am <span>Abdul Latif</span></p>
-                <p class="detail">Web Developer.</p>
-                    <p class="detail1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque in? Quo, adipisci. Doloribus at aperiam dignissimos exercitationem asperiores alias.
-                    </p>
-                    <div class="btn">
-                        <button>Hire ME</button>
-                        <button> View Project</button>
-                    </div>
-                
-            </div>
+    <header class="header">
+        <a href="#" class="logo"> Portfolio</a>
+        <i class='bx bx-menu' id="menu"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Its Me</h3>
+            <h1>Abdul Latif</h1>
+            <h3>And I Am a <span>Frontend Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Cum, architecto?<br> Commodi voluptatum animi neque
+             ab.</p>
+             <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+             </div>
+             <a href="#" class="btn">Download CV</a>
         </div>
-        <div class="right"></div>
-        <div class="design">
-            <div class="circle"></div>
-            <div class="circle"></div>
+        <div class="home-image">
+            <img src="./images/image for use.jpg" alt="My pic">
         </div>
 
 
+    </section>
+    <section class="About" id="about">
+        <div class="about-image">
+            <img src="./images/my pic.jpg" alt="my photo">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Quia ea neque labore soluta fugiat velit laboriosam 
+                 voluptatum dolorem esse. Natus veniam culpa quo quasi? 
+                 Aliquam dolorum nesciunt, blanditiis minus quasi illo
+                  nisi voluptatem at ullam, placeat cumque tempore ex fugit 
+                exercitationem soluta nobis aspernatur iure impedit!</p>
+                <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <section class="Service"id="Service">
+        <h2 class="heading">Our <span> Service</span></h2>
 
-    </div>
+        <div class="Service-container">
+            <div class="Service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Ipsam, magni quia enim sit corporis molestiae aliquid nam
+                      minus delectus, at consequuntur maiores ullam doloremque
+                       deserunt, fugit fugiat? Ut voluptas, tempore delec.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="Service-box">
+                <i class='bx bxl-wordpress'></i>
+                <h3>Web Designer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Ipsam, magni quia enim sit corporis molestiae aliquid nam
+                      minus delectus, at consequuntur maiores ullam doloremque
+                       deserunt, fugit fugiat? Ut voluptas, tempore delec.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="Service-box">
+                <i class='bx bxl-digitalocean'></i>
+                <h3>Digital Markting</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Ipsam, magni quia enim sit corporis molestiae aliquid nam
+                      minus delectus, at consequuntur maiores ullam doloremque
+                       deserunt, fugit fugiat? Ut voluptas, tempore delec.</p>
+                     <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="numer" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+
+
 </body>
+
 </html>
